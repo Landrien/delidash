@@ -1,0 +1,15 @@
+.Fond {
+    background-color: black;
+    width: 100%;
+    height: 100px;
+}
+
+t1 {
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    float: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

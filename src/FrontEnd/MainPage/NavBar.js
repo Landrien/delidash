@@ -4,10 +4,10 @@ import './NavBar.css';
 
 const NavBar = (props) => {
     return (
-        <div>
-            <div className='logo'>
+        <div className='Fond'>
+            <t1>
                 DeliDash
-            </div>
+            </t1>
             <nav className='item'>
                 <li>
                     <NavLink to="/" props>Home</NavLink>
