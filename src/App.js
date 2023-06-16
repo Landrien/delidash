@@ -4,11 +4,16 @@ import React, {useState} from 'react';
 
 
 function App() {
-  const [msg, setMsg] = useState('');
+  var [msg, setMsg] = useState('');
   const handleState = async () => {
-    const data = await window.fetch('/auth');
-    const json = await data;
-    const msg = json.role;
+    const requestOption = {
+      method : 'POST'
+    }
+    const data = await window.fetch('/create', requestOption);
+    const json = await data
+    const text = data.json().
+    then((body) => { msg = body.username});
+    // const msg = json.role;
     setMsg(msg)
   }
   return (
